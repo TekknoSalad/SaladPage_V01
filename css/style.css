@@ -8,11 +8,12 @@
   --font-primary: 'Shizuru', cursive;
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
+  --bg-color: #640635;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
   --header-shadow: #000 0px 0px 5px;
+  --box-shadow: rgb(255, 196, 0) 10px 10px 0px;
 }
 
 * {
@@ -30,12 +31,36 @@ body {
   font-family: var(--font-primary);
 }
 
-.container {
+.containerUp {
   display: flex;
   flex-direction: column;
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20rem 2rem;
+}
+
+.containerOriginal {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.rowstyle {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem 10rem;
 }
 
 /* HEADER */
@@ -44,7 +69,7 @@ header {
   box-shadow: var(--header-shadow);
 }
 
-header .container {
+header .containerUp {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +187,11 @@ section {
   text-align: center;
 }
 
+.owner-team {
+  font-size: 2rem;
+  text-align: justify;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
@@ -181,3 +211,22 @@ section {
   }
 }
  
+/* TEAM STYLES */
+
+.name h1 {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.box {
+ background-color: rgb(133, 216, 188);
+ width: fit-content;
+ box-shadow:  var(--box-shadow);
+ border-radius: 20px;
+ padding: 50px 25px;
+ text-align: center;
+ font-family: var(--font-secondary);
+ }
