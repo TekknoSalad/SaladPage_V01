@@ -231,3 +231,7 @@ section {
  text-align: center;
  font-family: var(--font-secondary);
  }
+
+ .gifsize {
+  width: 600px;
+  }
