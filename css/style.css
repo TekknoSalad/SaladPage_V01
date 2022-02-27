@@ -11,6 +11,7 @@
   --font-code: 'Roboto', monospace;
   --bg-color: #640635;
   --font-color: #ffffff;
+  --font-color2: #000000;
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
   --header-shadow: #000 0px 0px 5px;
@@ -229,7 +230,8 @@ section {
  border-radius: 20px;
  padding: 50px 25px;
  text-align: center;
- font-family: var(--font-secondary);
+ font-family: var(--font-third);
+ color: var(--font-color2);
  }
 
  .boxgif {
@@ -240,5 +242,6 @@ section {
   padding: 50px 25px;
   text-align: center;
   font-family: var(--font-secondary);
+
   }
  
