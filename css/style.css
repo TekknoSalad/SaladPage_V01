@@ -211,9 +211,12 @@ section {
   .countdown p {
     font-size: 1rem;
   }
-  .boxgif {
-    border-image-width: 100px
+
+  .countdown__gif {
+    width: 100px;
+    height: 100px;
   }
+
 }
  
 /* TEAM STYLES */
@@ -238,8 +241,9 @@ section {
  color: var(--font-color2);
  }
 
- .img h1 {
-   width: 300px;
+ .countdown__gif {
+   width: 500px;
+   height: 500px;
  }
 
   
