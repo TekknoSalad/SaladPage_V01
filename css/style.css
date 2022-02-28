@@ -47,7 +47,7 @@ body {
   flex-direction: column;
   max-width: 960px;
   margin: 0 auto;
-  padding: 10rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .containerOriginal {
@@ -214,8 +214,8 @@ section {
   }
 
   .countdown__gif {
-    width: 20%;
-    height: 20%;
+    max-width: 20rem;
+    max-height: 20rem;
   }
 
 }
@@ -245,6 +245,10 @@ section {
  .countdown__gif {
    width: 500px;
    height: 500px;
+ }
+
+ .img {
+   max-width: 100%;
  }
 
   
