@@ -26,7 +26,8 @@
 
 body {
   background-image: url(../images/background/Webback\ .png);
-  background-size: cover;
+  background-size: 100%;
+  background-position: top left;
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -207,7 +208,7 @@ section {
     max-width: 8rem;
   }
   .countdown h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .countdown p {
     font-size: 1rem;
@@ -218,6 +219,23 @@ section {
     max-height: 20rem;
   }
 
+  .countdown .clock-item {
+    width: 50px;
+  }
+
+  .countdown .clock-item .count-number {
+    font-size: 1.5rem;
+    padding: .75rem;
+  }
+
+  .countdown .clock-item .count-text {
+    font-size: .8rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  body {
+   background-size: 170%;
+  }
 }
  
 /* TEAM STYLES */
