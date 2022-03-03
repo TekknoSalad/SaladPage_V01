@@ -64,7 +64,7 @@ body {
   flex-direction: column;
   max-width: 960px;
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
 }
 
 /* HEADER */
@@ -93,7 +93,7 @@ header .containerUp {
   background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
   font-size: 1rem;
   text-transform: capitalize;
@@ -115,7 +115,7 @@ header .containerUp {
 }
 
 .hero-btn {
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 1.2rem;
   padding: 1.5rem 3rem;
 }
@@ -177,6 +177,16 @@ section {
   text-align: center;
 }
 
+.countdown h2 {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  margin: 2rem 0;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
 .countdown p {
   font-size: 2.1rem;
   font-family: var(--font-third);
@@ -207,8 +217,13 @@ section {
     padding: 1rem;
     max-width: 8rem;
   }
+  .hero-btn {
+    border-radius: 7px;
+    font-size: .8rem;
+    padding: 1rem 2rem;
+  }
   .countdown h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .countdown p {
     font-size: 1rem;
@@ -236,6 +251,26 @@ section {
   body {
    background-size: 170%;
   }
+
+  .box {
+    max-width: 30rem;
+    border: #be7efe 2px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+
+  .box p {
+    font-size: 1rem;
+    padding: .1rem .1rem;
+    line-height: 1.7;
+    }
+
+    .countdown h2 {
+     padding-top: 5rem;
+      padding-bottom: 1rem;
+      font-size: 2rem;
+    }
+
 }
  
 /* TEAM STYLES */
@@ -250,15 +285,33 @@ section {
 
 .box {
  background-color: rgb(0, 0, 0);
- outline: #ffffff;
- width: fit-content;
- box-shadow:  var(--box-shadow);
- border-radius: 20px;
- padding: 50px 25px;
+ border: #be7efe 5px;
+ border-style: solid;
+ max-width: 60rem;
+ border-radius: 40px;
+ padding: 2%;
  text-align: center;
- font-family: var(--font-third);
- color: var(--font-color2);
- }
+ font-family: var(--font-secondary);
+ color: var(--font-color);
+ font-size: 1.5rem;
+ line-height: 1.7;
+}
+
+.box p {
+ padding: .5rem 1rem;
+  }
+
+ .box2 {
+  background-color: rgb(0, 0, 0);
+  outline: #ffffff;
+  width: fit-content;
+  box-shadow:  var(--box-shadow);
+  border-radius: 20px;
+  padding: 50px 25px;
+  text-align: center;
+  font-family: var(--font-third);
+  color: var(--font-color2);
+  }
 
  .countdown__gif {
    width: 500px;
