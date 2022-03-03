@@ -253,11 +253,11 @@ section {
   }
 
   .box {
-    max-width: 30rem;
+    max-width: fit-content;
     border: #be7efe 2px;
     border-style: solid;
     border-radius: 5px;
-    padding: 0.1em;
+    
   }
 
   .box p {
@@ -275,18 +275,26 @@ section {
     max-width: 10rem;
     max-height: 10rem;
     border-radius: 5px;
+    padding: 0rem;
   }
 
  .split h3 {
    font-size: 1rem;
+   padding: 0rem;
  }
 
   .split p {
     font-size: .7rem;
-    padding: .1em;
+   padding: 0rem;
     line-height: 1.2em;
-    max-width: 10rem
+    width: 100%;
   }
+
+  .split {
+    width: 100%;  
+    padding: 0rem;
+  }
+
 }
  
 /* TEAM STYLES */
@@ -305,7 +313,7 @@ section {
  border-style: solid;
  max-width: 60rem;
  border-radius: 40px;
- padding: 1em;
+ padding: 1rem;
  text-align: center;
  font-family: var(--font-secondary);
  color: var(--font-color);
@@ -313,8 +321,21 @@ section {
  line-height: 1.7;
 }
 
+.box2 {
+  background-color: rgb(0, 0, 0);
+  border: #be7efe 5px;
+  border-style: solid;
+  max-width: 60rem;
+  border-radius: 40px;
+  text-align: center;
+  font-family: var(--font-secondary);
+  color: var(--font-color);
+  font-size: 1.5rem;
+  line-height: 1.7;
+ }
+
 .box p {
- padding: 0.5em;
+ padding-top: 0.5em;
 }
 
 
@@ -337,19 +358,17 @@ section {
  .split {
    display: flex;
    flex-direction: row;
-   flex-wrap: nowrap;
+   width: 100%;
    flex-basis: 1;
    text-align: left;
-   padding: 0.5em;
+   padding: 1em;
+   columns: 2;
   }
 
- .split h3 {
-    margin-left: .5em;
+.split p {
+  margin-left: 1em;
 }
-
- .split li {
-   display: block;
-   margin-left: 1em;
-    flex-shrink: 1;
-    flex-grow: 0;
- }
+ 
+.split h3 {
+  margin-left: 1em;
+}
