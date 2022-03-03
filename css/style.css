@@ -359,16 +359,20 @@ section {
    display: flex;
    flex-direction: row;
    width: 100%;
+   flex-wrap: nowrap;
    flex-basis: 1;
    text-align: left;
    padding: 1em;
    columns: 2;
+ 
   }
 
 .split p {
   margin-left: 1em;
+  margin-bottom: .5em;
 }
  
 .split h3 {
-  margin-left: 1em;
+  margin-left: .75em;
+  margin-bottom: 1em;
 }
