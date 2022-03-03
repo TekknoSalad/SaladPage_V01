@@ -257,20 +257,35 @@ section {
     border: #be7efe 2px;
     border-style: solid;
     border-radius: 5px;
-    
+    padding: 0.1em;
   }
 
   .box p {
     font-size: 1rem;
-    padding: .5em;
-    }
+    padding: 0rem;
+  }
 
-    .countdown h2 {
-     padding-top: 5rem;
-      padding-bottom: 1rem;
-      font-size: 2rem;
-    }
+  .countdown h2 {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
 
+  .team__img {
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 5px;
+  }
+
+ .split h3 {
+   font-size: 1rem;
+ }
+
+  .split p {
+    font-size: .8rem;
+    padding: .1;
+    line-height: 1.2em;
+  }
 }
  
 /* TEAM STYLES */
@@ -298,8 +313,8 @@ section {
 }
 
 .box p {
- padding: .5em;
-  }
+ padding: 0.5em;
+}
 
 
  .countdown__gif {
@@ -321,19 +336,19 @@ section {
  .split {
    display: flex;
    flex-direction: row;
+   flex-wrap: nowrap;
+   flex-basis: 1;
    text-align: left;
-   margin-left: 2em;
-   margin-top: 2em;
- }
+   padding: 0.5em;
+  }
 
  .split h3 {
+    margin-left: .5em;
+}
 
-   margin-left: 2em;
- }
-
- .split p {
-   display: flex; 
-   text-align: left;
-   margin-left: 2em;
-   outline: #640635 3px  solid;
+ .split li {
+   display: block;
+   margin-left: 1em;
+    flex-shrink: 1;
+    flex-grow: 0;
  }
