@@ -282,9 +282,10 @@ section {
  }
 
   .split p {
-    font-size: .8rem;
-    padding: .1;
+    font-size: .7rem;
+    padding: .1em;
     line-height: 1.2em;
+    max-width: 10rem
   }
 }
  
