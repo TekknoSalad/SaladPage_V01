@@ -49,6 +49,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem 2rem;
+  
 }
 
 .containerOriginal {
@@ -65,6 +66,20 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
+.rowstyle h2 {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  margin: 2rem 0;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  font-size: 4rem;
+  text-align: center;
+
 }
 
 /* HEADER */
@@ -257,8 +272,26 @@ section {
     border: #be7efe 2px;
     border-style: solid;
     border-radius: 5px;
-    
   }
+
+  .boxT {
+    max-width: 20rem;
+    }
+
+  .rowstyle .boxT .imgBox img{
+      max-width: 20rem;
+      max-height: 20rem;
+    }
+    
+ .rowstyle h2 {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+
+
+  /* Mediasomething */
 
   .box p {
     font-size: 1rem;
@@ -308,18 +341,97 @@ section {
 }
 
 .box {
+  background-color: rgb(0, 0, 0);
+  border: #be7efe 5px;
+  border-style: solid;
+  max-width: 30rem;
+  border-radius: 40px;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--font-secondary);
+  color: var(--font-color);
+  font-size: 1.5rem;
+  line-height: 1.7;
+ }
+
+.boxT {
  background-color: rgb(0, 0, 0);
  border: #be7efe 5px;
  border-style: solid;
- max-width: 60rem;
+ max-width: 30rem;
  border-radius: 40px;
- padding: 1rem;
  text-align: center;
  font-family: var(--font-secondary);
  color: var(--font-color);
  font-size: 1.5rem;
  line-height: 1.7;
 }
+
+.rowstyle .boxT {
+position: relative;
+width: 100%;
+height: 100%;
+margin: 10px;
+box-sizing: border-box;
+display: inline-block;
+ }
+
+.rowstyle .boxT .imgBox {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+} 
+
+.rowstyle .boxT .imgBox img{
+  max-width: 100%; 
+  transition: transform 2s;
+}
+
+.rowstyle .boxT:hover .imgBox img{
+  transform: scale(1.2);
+}
+
+.rowstyle .boxT .details{
+ position: absolute;
+ top: 1rem;
+ left: 1rem;
+ bottom: 1rem;
+ right: 1rem;
+ border-radius: 25px;
+ background: rgba(207, 124, 233, 0.8);
+ transform: scaleY(0);
+ transition: transform 1s;
+}
+
+.rowstyle .boxT:hover .details{
+transform: scaleY(1);
+  
+ }
+
+.rowstyle .boxT .details .content{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ text-align: center;
+ padding: 15px;
+ color: #ffffff
+ }
+
+ .rowstyle .boxT .details .content h3 {
+  color: #640635;
+  font-size: 2rem;
+  padding: 1rem;
+  }
+
+  .rowstyle .boxT .details .content p {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: .5rem;
+    }
+ 
+
+
+/* TEAM SOMETHING */
 
 .box2 {
   background-color: rgb(0, 0, 0);
