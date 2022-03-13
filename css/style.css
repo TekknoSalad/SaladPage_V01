@@ -14,7 +14,7 @@
   --font-color2: #000000;
   --btn-bg-color: #ffffff;
   --accent-color: #ad0ab3;
-  --header-shadow: #000 0px 0px 5px;
+  --header-shadow: rgb(255, 255, 255) 0px 0px 10px;
   --box-shadow: rgb(255, 255, 255) 10px 10px 0px;
 }
 
@@ -76,7 +76,7 @@ body {
     flex-direction: row;
     max-width: 960px;
     margin: 0 auto;
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
     margin: 0 auto;
     text-align: center;
     align-items: center;
@@ -86,7 +86,7 @@ body {
     font-family: var(--font-secondary);
     font-style: normal;
     margin: 2rem 0;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
     font-size: 4rem;
     text-align: center;
@@ -148,6 +148,59 @@ header .containerUp {
   padding: 1.5rem 3rem;
 }
 
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 32px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  
+}
+
+.menu-btn_burger {
+  width: 40px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  border-radius: 5px;
+  background: #ffffff;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-16px);  
+}
+
+.menu-btn_burger::after {
+  transform: translateY(16px);  
+}
+
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-40px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(30px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(-45deg) translate(30px, 35px);
+}
+
 /* COUNTDOWN SECTION */
 
 section {
@@ -203,6 +256,16 @@ section {
   margin: 2rem 0;
   font-size: 6rem;
   text-align: center;
+  padding-top: 5rem;
+}
+
+.rowstyle h1 {
+  text-shadow: 5px 5px 0 var(--accent-color);
+  font-style:normal;
+  margin: 2rem 0;
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 3rem;
 }
 
 .countdown h2 {
@@ -254,6 +317,10 @@ section {
     .countdown h1 {
       font-size: 4rem;
       }
+
+      .rowstyle h1 {
+        font-size: 4rem;
+        }
     .countdown p {
       font-size: 1rem;
       }
@@ -284,12 +351,7 @@ section {
    .rowstyleT {
     display: flex;
     flex-direction: column;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 1rem 1rem;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
+    
     }
 
   .box {
@@ -300,7 +362,7 @@ section {
     }
 
   .boxT {
-    max-width: 20rem;
+    max-width: fit-content;
     }
 
     .box p {
@@ -313,26 +375,40 @@ section {
       padding: 0rem;
       }
 
+      .boxF p {
+        font-size: 1rem;
+        padding: 0rem;
+        }
+
+        .rowstyleT .boxT{
+          max-width: 15rem;
+          max-height: 15rem;
+          }
+
       .rowstyleT .boxT .imgBox img{
-        max-width: 15rem;
-        max-height: 15rem;
+        max-width: 100px;
+        max-height: 100px;
         }
     
     .rowstyle h2 {
       padding-top: .5rem;
       padding-bottom: .5rem;
-      font-size: 2.5rem;
+      font-size: 3rem;
       }
 
       .rowstyleT h2 {
         padding-top: .5rem;
         padding-bottom: .5rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
         }
 
     .rowstyle .box {
       margin: .1rem;
       }
+
+      .rowstyle .boxF {
+        margin: .1rem;
+        }
   
     .rowstyle .boxL {
       margin: .1rem;
@@ -351,8 +427,8 @@ section {
   }
 
   .team__img {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 5rem;
+    max-height: 5rem;
     border-radius: 5px;
     padding: 0rem;
   }
@@ -419,17 +495,36 @@ section {
   }
 
 .boxT {
-  background-color:  rgba(179, 253, 94, 0.603);
+  background-color:  rgba(0, 0, 0, 0.603);
   border: #05ccf0 5px;
   border-style: hidden;
-  max-width: 50rem;
+  max-width: 30rem;
+  max-height: 30rem;
+  padding: 1rem;
   border-radius: 40px;
   text-align: center;
+  margin: 1rem;
   font-family: var(--font-primary);
   color: rgb(0, 0, 0);
   font-size: 2rem;
   line-height: 1.7;
   }
+
+  .boxF {
+    background-color: rgba(94, 253, 240, 0.603);
+    border: #05cdf0 5px;
+    border-style: hidden;
+    max-width: 60rem;
+    border-radius: 40px;
+    padding: 2rem;
+    text-align: left;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    color: rgb(0, 0, 0); 
+    text-shadow:  rgb(0, 235, 215) 2px 2px;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    }
 
     .rowstyle .box {
       position: relative;
@@ -439,6 +534,15 @@ section {
       box-sizing: border-box;
       display: inline-block;
       }
+
+      .rowstyle .boxF {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 1em;
+        box-sizing: border-box;
+        display: inline-block;
+        }
 
     .rowstyle .boxL {
       position: relative;
@@ -451,9 +555,9 @@ section {
 
     .rowstyleT .boxT {
       position: relative;
-      width: 100%;
-      height: 100%;
-      margin: 10px;
+      max-width: 25rem;
+      max-height: 25rem;
+      margin: .5rem;
       box-sizing: border-box;
       display: inline-block;
       }
@@ -461,17 +565,18 @@ section {
         .rowstyleT .boxT .imgBox {
           position: relative;
           overflow: hidden;
-          padding: 1rem;
           } 
 
           .rowstyleT .boxT .imgBox img{
             max-width: 100%; 
+            max-height: 100%;
             transition: transform 2s;
+            position: center;
             }
 
           .rowstyleT .boxT:hover .imgBox img{
             transform: scale(1.2);
-          }
+            }
 
         .rowstyleT .boxT .details{
           position: absolute;
@@ -535,10 +640,10 @@ section {
 }
 
 
- .countdown__gif {
-   width: 500px;
-   height: 500px;
- }
+.countdown__gif {
+  width: 500px;
+  height: 500px;
+}
 
  .team__img {
   width: 300px;
