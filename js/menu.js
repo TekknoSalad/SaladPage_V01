@@ -7,5 +7,6 @@ menuBtn.addEventListener('click', () => {
     } else {
         menuBtn.classList.remove('open');
         menuOpen = false;
-    }
+    }    
+    
 });
