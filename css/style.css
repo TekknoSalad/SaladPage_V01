@@ -169,12 +169,13 @@ header .containerUp {
   
 }
 
-.menu-btn_burger {
+ .menu-btn_burger {
   width: 40px;
   height: 6px;
   background: #ffffff;
   border-radius: 5px;
   transition: all .5s ease-in-out;
+    
 }
 
 .menu-btn_burger::before,
@@ -210,26 +211,38 @@ header .containerUp {
   transform: rotate(-45deg) translate(20px, 20px);
 }
 
-.nav {
-  padding: 0;
-  margin: 0 00px;
-  transition: 0.5s ease;
-  display: block;
+.menu-btn .dropdown-menu {
+ position: absolute;
+ left: 0;
+ top: calc(100% + 1.7rem);
+ background-color: #000;
+ padding: 1rem;
+ border-radius: 1rem;
+ pointer-events: none;
+ opacity: 0;
+ transform: translateY(-10px);
+ transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.nav li{
+.menu-btn.open .dropdown-menu{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  }
+
+.dropdown-menu li{
   list-style: none;
   padding: .2rem;
 }
 
-.nav li a:hover{
+.dropdown-menu li a:hover{
  font-weight: bold;
 }
 
-.nav li a{
+.dropdown-menu li a{
   color: #ffffff;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -444,6 +457,10 @@ section {
   
     .rowstyle .boxL {
       margin: .1rem;
+      }
+
+      .dropdown-menu li a{
+       font-size: 1rem;
       }
 
 
