@@ -436,6 +436,11 @@ section {
         padding: 0rem;
         }
 
+        .boxF h3 {
+          font-size: 1.5rem;
+          padding: 0rem;
+          }
+
         .rowstyleT .boxT{
           max-width: 15rem;
           max-height: 15rem;
