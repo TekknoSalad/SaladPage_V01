@@ -357,11 +357,11 @@ section {
 
 @media screen and (max-width: 768px) {
   .menu {
-    gap: 1rem;
+    gap: .7rem;
   }
   .wallet-btn {
     margin-left: 0;
-    padding: 1rem;
+    padding: .5rem;
     max-width: 8rem;
   }
   .hero-btn {
@@ -495,11 +495,11 @@ section {
     }   
 
     .menu-btn_burger::before {
-      transform: translateY(-12px);  
+      transform: translateY(-11px);  
     }
     
     .menu-btn_burger::after {
-      transform: translateY(12px);  
+      transform: translateY(11px);  
     }
 
   /* Mediasomething */
