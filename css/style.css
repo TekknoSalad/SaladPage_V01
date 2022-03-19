@@ -83,6 +83,7 @@ body {
   .rowstyleT {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     max-width: 960px;
     margin: 0 auto;
     padding: 0rem 2rem;
@@ -441,6 +442,16 @@ section {
           padding: 0rem;
           }
 
+          .boxR p {
+            font-size: 1rem;
+            padding: 0rem;
+            }
+
+            .boxR h3 {
+              font-size: 1.5rem;
+              padding: 0rem;
+              }
+
         .rowstyleT .boxT{
           max-width: 15rem;
           max-height: 15rem;
@@ -470,6 +481,10 @@ section {
       .rowstyle .boxF {
         margin: .1rem;
         }
+
+        .rowstyle .boxR {
+          margin: .1rem;
+          }
   
     .rowstyle .boxL {
       margin: .1rem;
@@ -617,6 +632,22 @@ section {
     line-height: 1.7;
     }
 
+    .boxR {
+      background-color: rgba(94, 136, 253, 0.603);
+      border: #05cdf0 5px;
+      border-style: hidden;
+      max-width: 60rem;
+      border-radius: 40px;
+      padding: 2rem;
+      text-align: left;
+      font-weight: bold;
+      font-family: var(--font-primary);
+      color: rgb(0, 0, 0); 
+      text-shadow:  rgb(0, 149, 235) 2px 2px;
+      font-size: 1.5rem;
+      line-height: 1.7;
+      }
+
     .rowstyle .box {
       position: relative;
       width: 100%;
@@ -634,6 +665,15 @@ section {
         box-sizing: border-box;
         display: inline-block;
         }
+
+        .rowstyle .boxR {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          margin: 1em;
+          box-sizing: border-box;
+          display: inline-block;
+          }
 
     .rowstyle .boxL {
       position: relative;
