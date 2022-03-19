@@ -33,6 +33,7 @@ body {
   height: 100vh;
   color: var(--font-color);
   font-family: var(--font-primary);
+
 }
 
 .containerUp {
@@ -109,12 +110,19 @@ body {
 
 header {
   box-shadow: var(--header-shadow);
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 header .containerUp {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  
+  
 }
 
 .menu {
@@ -271,6 +279,7 @@ section {
   align-items: center;
   height: 70%;
 }
+
 
 .countdown ul {
   display: flex;
