@@ -354,7 +354,8 @@ section {
 /* OWNER STYLES */
 
 .owner-status {
-  font-size: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
   text-align: center;
 }
 
