@@ -355,7 +355,9 @@ section {
 
 .owner-status {
   padding-top: 5rem;
-  font-size: 1rem;
+  font-size: 2rem;
+  font-family: var(--font-third);
+  text-shadow: #000 2px 2px;
   text-align: center;
 }
 
